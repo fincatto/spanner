@@ -12,20 +12,20 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.target>11</maven.compiler.target>
         <maven.compiler.source>11</maven.compiler.source>
+        <google-cloud-spanner-jdbc.version>1.12.0</google-cloud-spanner-jdbc.version>
+        <junit-jupiter-api.version>5.5.2</junit-jupiter-api.version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>com.google.cloud</groupId>
             <artifactId>google-cloud-spanner-jdbc</artifactId>
-            <version>1.12.0</version>
+            <version>${google-cloud-spanner-jdbc.version}</version>
         </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
-            <version>5.5.2</version>
+            <version>${junit-jupiter-api.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
